@@ -166,6 +166,7 @@ const animate = () => {
     let trivia = document.querySelector("#trivia")
     let formClass = document.querySelector(".form")
     let formItem = document.querySelectorAll(".form-item")
+    let title = document.querySelector(".title")
 
     formClass.style.minHeight = "10%"
     formClass.style.paddingTop = "20px"
@@ -176,7 +177,7 @@ const animate = () => {
     form.style.justifyContent = "space-evenly"
     form.style.flexDirection = "row"
     trivia.style.display = "flex"
-    
+    title.style.display = "none"
 }
 
 const openModal = () => {
