@@ -70,6 +70,7 @@ const renderTrivia = () => {
             let p2 = document.createElement("p")
 
             let btn = document.createElement("button")
+            btn.style.cursor = "pointer"
 
             h2.innerHTML = `Question no. ${i+1} - ${data.results[i].question}`
             
