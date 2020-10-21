@@ -9,10 +9,15 @@
 <body>
     <div id="main">
         <div class="wrapper">
+            <div class="title">
+                <h1>
+                    Trivia Quizzes
+                </h1>
+            </div>
             <div class="form">
                 <form>
-                    <input type="number" name="questions" placeholder="How many questions?" required>
-                    <select name="trivia_category" required>
+                    <input class="form-item" type="number" name="questions" placeholder="How many questions?" required>
+                    <select class="form-item" name="trivia_category" required>
                         <option value="9">General Knowledge</option>
                         <option value="10">Entertainment: Books</option>
                         <option value="11">Entertainment: Film</option>
@@ -39,13 +44,13 @@
                         <option value="32">Entertainment: Cartoon &amp; Animations</option>		
                     </select>
     
-                    <select name="trivia_difficulty" required>
+                    <select class="form-item" name="trivia_difficulty" required>
                         <option value="easy">Easy</option>
                         <option value="medium">Medium</option>
                         <option value="hard">Hard</option>
                     </select>
     
-                    <input type="submit">
+                    <input class="form-item" type="submit">
     
                 </form>
             </div>
@@ -53,8 +58,11 @@
                 
             </div>
         </div>
-
+        <div id="modal">
+            <div class="loader"></div>
+        </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
